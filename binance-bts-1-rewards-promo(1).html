@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article" />
+
+  
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="og:title" property="og:title" content="" />
+  <meta name="og:description" property="og:description" content="" />
+  <meta name="og:image" property="og:image" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Pazly Colors -->
+    <link rel="stylesheet" href="https://pazly.dev/colors/gradients.css" />
+    <link rel="stylesheet" href="https://pazly.dev/colors/backgrounds.css" />
+    <link rel="stylesheet" href="https://pazly.dev/colors/text.css" />
+    <link rel="stylesheet" href="https://pazly.dev/colors/border.css" />
+    <style>
+    body { overflow-x: hidden; }
+    h1, h2, h3, h4, h5, h6 { line-height:1.3 !important; }
+    .stretchToScreen { width:100vw; height:100vh; }
+    </style>
+
+    <!-- Fontswesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+
+<body class="m-0 p-0 stretchToScreen">
+
+
+<!-- Pazly Blocks Come Here -->
+<section id="pazly-template-set" class="m-0 p-0 stretchToScreen bg-white">
+<section xmlns="http://www.w3.org/1999/xhtml"  class="w-full py-16 bg-p-white">
+    <div  class="container mx-auto flex flex-col-reverse md:flex-row justify-center">
+        <div  class="w-full flex flex-col md:w-1/2 px-4 items-center justify-center">
+            <form pazly-editable="form" method="POST" action static-form  class="flex flex-row justify-start w-full max-w-md rounded-lg overflow-hidden shadow-xl border ">
+                <input  class="bg-p-gray-100 focus:outline-none px-4 w-full m-0" placeholder="Email" name="email" type="text" wfd-id="id1" />
+                <button pazly-editable="innerHTML bg" target="_blank"  class="inline-flex items-center py-2 px-6 focus:outline-none text-lg m-0 h-12 whitespace-pre-line text-white bg-p-black"> <i  class="fas fa-paper-plane"></i> </button>
+            </form>
+            <p pazly-editable="innerHTML"  class="text-sm mt-2 mb-8 max-w-md w-full whitespace-pre-line text-black">Keep in tough with us. Subscribe to our newsletter.</p>  
+        </div>
+        <div  class="w-10/12 md:w-6/12 px-4 md:px-12">
+            <h6 pazly-editable="innerHTML"  class="text-4xl mb-3 font-semibold whitespace-pre-line text-black">Join a community of 25000+ members who share your passion.</h6>
+            <p pazly-editable="innerHTML"  class="mb-4 text-lg whitespace-pre-line text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</section>
+<section xmlns="http://www.w3.org/1999/xhtml"  class="w-full bg-p-indigo-900 py-16">
+    <div  class="container mx-auto flex flex-col-reverse md:flex-row justify-center">
+        <div  class="w-10/12 md:w-6/12 px-4 md:px-12">
+            <h6 pazly-editable="innerHTML"  class="text-4xl mb-3 font-semibold text-white">Join a community of 25000+ members whi share your passion.</h6>
+            <p pazly-editable="innerHTML"  class="mb-4 text-lg text-p-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div  class="w-full flex flex-col md:w-1/2 px-4 items-center justify-center">
+            <form pazly-editable="form" method="POST" action static-form  class="flex flex-row justify-start w-full max-w-md rounded-lg overflow-hidden shadow-xl">
+                <input  class="bg-p-gray-100 focus:outline-none px-4 w-full m-0" placeholder="Email" name="email" type="text" wfd-id="id2" />
+                <button pazly-editable="innerHTML bg" target="_blank"  class="inline-flex items-center bg-p-gray-200 text-p-purple-800 text-black py-2 px-6 focus:outline-none text-lg m-0 h-12"> <i  class="fas fa-paper-plane"></i> </button>
+            </form>
+            <p pazly-editable="innerHTML"  class="text-sm mt-2 text-p-gray-200 mb-8 max-w-md w-full">Keep in tough with us. Subscribe to our newsletter.</p>  
+        </div>
+    </div>
+</section>
+</section>
+<!-- Pazly Blocks Ends Here -->
+
+<!-- Pazly Scripts Start Here -->
+<section id="pazly-scripts-set" class="m-0 p-0 w-0 h-0">
+        
+<!-- Smooth scrolling -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    // handle links with @href started with '#' only
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        // target element id
+        var id = $(this).attr('href');
+    
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+    
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+    
+        // top position relative to the document
+        var pos = $id.offset().top;
+    
+        // animated top scrolling
+        $('body, html').animate({scrollTop: pos});
+    });
+</script>
+        
+</section>
+        
+</body>
+</html>
+            
